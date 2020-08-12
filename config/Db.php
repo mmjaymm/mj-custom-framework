@@ -8,12 +8,7 @@ class Db
     private $password = 'root';
     private $con = null;
 
-    public function __construct()
-    {
-        
-    }
-
-    public function connect()
+    protected function connect()
     {   
         $dns = "mysql:host=".$this->db_host.";dbname=".$this->db_name;
 
