@@ -1,7 +1,12 @@
 <?php
+session_start();
 
-// require_once './config/Db.php';
+/* Root Directory */
+define('ROOT', dirname(__FILE__));
 
-echo "<pre>";
-print_r($_SERVER);
-echo "</pre>";
+require_once 'core/Bootstrap.php';
+require_once 'core/Controller.php';
+require_once 'core/View.php';
+
+$app = new Bootstrap();
+?>

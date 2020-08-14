@@ -23,4 +23,9 @@ class Db
             return "Connection failed: ". $e->getMessage();
         }
     }
+
+    public function fullname($name)
+    {
+        echo $name;
+    }
 }
