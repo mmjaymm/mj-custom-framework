@@ -8,14 +8,16 @@ class User extends Controller
     }
 
     public function index()
-    {
+    {   
         $this->load->view('header');
         $this->load->view('index');
         $this->load->view('footer');
     }
 
-    public function sample()
+    public function sample($a, $cxzcz)
     {
-        echo "sample";
+        echo $a.' - '.$cxzcz;
+        // $n = func_num_args();
+        // echo $n;
     }
 }

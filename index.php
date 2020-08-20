@@ -1,23 +1,12 @@
 <?php
-/*
- * ---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- * ---------------------------------------------------------------
- */
+
+/* Application Environment */
 define('ENVIRONMENT', 'development');
 
-/*
- * ---------------------------------------------------------------
- * DEFAULT TIME ZONE
- * ---------------------------------------------------------------
- */
+/* Defaul Timezone */
 date_default_timezone_set('Asia/Manila');
 
-/*
- * ---------------------------------------------------------------
- * ERROR REPORTING
- * ---------------------------------------------------------------
- */
+/* Error Reporting */
 if (defined('ENVIRONMENT'))
 {
     switch (ENVIRONMENT)
@@ -33,14 +22,12 @@ if (defined('ENVIRONMENT'))
     }
 }
 
-$base_path = __DIR__; //current folder name
-
-/*
- * ---------------------------------------------------------------
- * ROOT DIRECTORY
- * ---------------------------------------------------------------
- */
+/* Root Directory */
 define('ROOT', dirname(__FILE__));
+define('ROOT_PATH', str_replace('\\', '/', ROOT));
+
+/* Controllers Directory */
+define('CONTROLLERS_PATH', './app/controllers/');
 
 require_once 'config/config.php';
 require_once 'core/init.php';
