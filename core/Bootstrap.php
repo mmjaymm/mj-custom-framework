@@ -3,9 +3,9 @@
 require_once 'config/config.php';
 require_once 'config/database.php';
 require_once 'core/init.php';
-require_once 'core/x_Registry.php';
+require_once 'core/Registry.php';
 require_once 'core/Loader.php';
-require_once 'core/x_Common.php';
+require_once 'core/Common.php';
 
 $class = null;
 $method = null;
