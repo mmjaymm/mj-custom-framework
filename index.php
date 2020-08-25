@@ -29,8 +29,6 @@ define('ROOT_PATH', str_replace('\\', '/', ROOT));
 /* Controllers Directory */
 define('CONTROLLERS_PATH', './app/controllers/');
 
-require_once 'config/config.php';
-require_once 'core/init.php';
+require_once 'core/Bootstrap.php';
 
-$app = new Bootstrap($config);
 ?>

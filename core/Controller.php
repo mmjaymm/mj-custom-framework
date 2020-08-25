@@ -1,9 +1,18 @@
 <?php
+class Controller extends Loader
+{   
+    private static $instance;
+    public $load;
 
-class Controller
-{
     public function __construct()
+    {  
+        // $this->load = new Loader();
+        $this->load = $this;
+		self::$instance = $this->load;
+    }
+
+    public static function &getInstance()
     {
-        $this->load = new View();
+        return self::$instance;
     }
 }

@@ -5,6 +5,8 @@ class User extends Controller
     public function __construct()
     {
         parent::__construct();
+
+        $this->load->model('users');
     }
 
     public function index()
@@ -14,10 +16,8 @@ class User extends Controller
         $this->load->view('footer');
     }
 
-    public function sample($a, $cxzcz)
+    public function sample($var)
     {
-        echo $a.' - '.$cxzcz;
-        // $n = func_num_args();
-        // echo $n;
+        $this->users->get_firstname($var);
     }
 }
