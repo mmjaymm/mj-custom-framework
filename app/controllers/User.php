@@ -18,6 +18,6 @@ class User extends Controller
 
     public function sample($var)
     {
-        $this->users->get_firstname($var);
+        // $this->users->get_firstname($var);
     }
 }

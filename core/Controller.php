@@ -6,9 +6,8 @@ class Controller extends Loader
 
     public function __construct()
     {  
-        // $this->load = new Loader();
         $this->load = $this;
-		self::$instance = $this->load;
+        self::$instance = $this->load;
     }
 
     public static function &getInstance()
